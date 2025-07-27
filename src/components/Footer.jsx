@@ -3,38 +3,62 @@ import { assets } from '../assets/assets'
 
 const Footer = () => {
   return (
-    <div>
-      <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm'>
-        <div >
-        <img src={assets.logo} className='mb-5 w-32' alt="" />
-        <p className='w-full md:w-2/3 text-gray-600'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sint eum autem mollitia laborum sequi voluptate itaque eaque, accusantium praesentium ad. Tenetur ipsa ducimus quasi odio, laboriosam repudiandae alias tempora!
+    <footer className="bg-[#222222] text-white py-10 px-4">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        {/* Company Info */}
+       <div class="about-section">
+  <h3>ABOUT US</h3>
+  <img src="esi-logo.png" alt="Erlendis Solutions India Logo" class="logo" />
+  <div className="flex justify-center gap-6">
+  <a href="#" aria-label="Facebook">
+    <img src="facebook-icon.png" alt="Facebook" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+  </a>
+  <a href="#" aria-label="Twitter">
+    <img src="twitter-icon.png" alt="Twitter" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+  </a>
+  <a href="#" aria-label="Instagram">
+    <img src="instagram-icon.png" alt="Instagram" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+  </a>
+  <a href="#" aria-label="LinkedIn">
+    <img src="linkedIn-icon.png" alt="LinkedIn" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+  </a>
+</div>
+</div>
 
-        </p>
-        </div>
+
+        {/* Contact Info */}
         <div>
-            <p className='text-xl font-medium mb-5'>COMPANY</p>
-            <ul className='flex flex-col gap-1 text-gray-600'>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Delivery</li>
-                <li>Privacy Policy</li>
-            </ul>
+          <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
+          <ul className="text-sm text-gray-300 space-y-2">
+            <li>
+              <span className="font-semibold">Address:</span> Ecospace Business Park, Sector V, Kolkata, West Bengal 700091
+            </li>
+            <li>
+              <span className="font-semibold">Phone:</span> +91 8617708345 / +91 9674723042
+            </li>
+            <li>
+              <span className="font-semibold">Email:</span> info@erlendissolutions.com
+            </li>
+          </ul>
         </div>
+
+        {/* Quick Links */}
         <div>
-            <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
-            <ul className='flex flex-col gap-1 text-gray-600'>
-                <li>+1-212-456-7890</li>
-                <li>abc@foreverou.com</li>
-            </ul>
+          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul className="text-sm text-gray-300 space-y-2">
+            <li><a href="/" className="hover:underline">Home</a></li>
+            <li><a href="/aboutus" className="hover:underline">About Us</a></li>
+            <li><a href="/contactus" className="hover:underline">Contact Us</a></li>
+            <li><a href="/careers" className="hover:underline">Careers</a></li>
+          </ul>
         </div>
       </div>
-      <div>
-        <hr />
-        <p className='py-5 text-sm text-center'>Copyright 2024@ forever.com - All Right Reserved.</p>
+
+      <div className="mt-10 text-center text-xs text-gray-500 border-t border-gray-700 pt-4">
+        © {new Date().getFullYear()} Erlendis Solutions. All Rights Reserved.
       </div>
-    </div>
-  )
+    </footer>
+  );
 }
 
 export default Footer

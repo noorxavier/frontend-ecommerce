@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { assets } from '../assets/assets';
 const NewsLetterBox = () => {
 
     const onSubmitHandler=(event)=>{
@@ -7,17 +7,29 @@ const NewsLetterBox = () => {
        
     }
   return (
-    <div className='text-center'>
-      <p className='text-2xl font-medium text-gray-800'>Subscribe now & get 20% off</p>
-      <p className='text-gray-400 mt-3'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas libero omnis amet expedita veniam nihil nobis debitis inventore esse voluptatem? Soluta similique tempore in id repudiandae accusantium iusto rem dolorem.
+  <div class="text-center my-12">
+  {/* <!-- Heading --> */}
+  <h2 class="text-3xl font-semibold">
+    <span class="text-cyan-500 font-bold">Our</span> <span class="text-gray-800">Management</span>
+  </h2>
 
-      </p>
-      <form onSubmit={onSubmitHandler} className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3'>
-        <input className='w-full sm:flex-1 outline-none' type="email" placeholder='Enter Your Email' required/>
-        <button type='submit' className='bg-black text-white text-xs px-10 py-4'>SUBSCRIBE</button>
-      </form>
+  {/* <!-- Management Cards --> */}
+  <div class="mt-10 flex justify-center gap-10 flex-wrap">
+    {/* <!-- Card 1 --> */}
+    <div class="bg-white shadow-md p-6 w-60">
+      <img src={assets.c} alt="Pinak Ranjan Shome" class="mx-auto w-32 h-32 mb-4" />
+      <h3 class="text-cyan-500 font-bold text-lg">PINAK RANJAN SHOME</h3>
+      <p class="text-gray-700 font-medium mt-1">Managing Director</p>
     </div>
+
+    
+    <div class="bg-white shadow-md p-6 w-60">
+      <img src="manager2.png" alt="Rupavikram Das" class="mx-auto w-32 h-32 mb-4" />
+      <h3 class="text-cyan-500 font-bold text-lg">RUPAVIKRAM DAS</h3>
+      <p class="text-gray-700 font-medium mt-1">Center Manager</p>
+    </div>
+  </div>
+</div>
   )
 }
 
