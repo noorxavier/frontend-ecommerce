@@ -7,20 +7,41 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
         {/* Company Info */}
        <div class="about-section">
-  <h3>ABOUT US</h3>
-  <img src="esi-logo.png" alt="Erlendis Solutions India Logo" class="logo" />
-  <div className="flex justify-center gap-6">
+<h3>ABOUT US</h3>
+<img
+  src="https://erlendissolutions.com/uploads/logo/298281641905006logo1.png"
+  alt="Erlendis Solutions India Logo"
+  className="flex justify-center mb-6 "
+  style={{ maxWidth: '100%', height: '50%' }}
+/>
+<div className="flex justify-center gap-6">
   <a href="#" aria-label="Facebook">
-    <img src="facebook-icon.png" alt="Facebook" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+    <img
+      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+      alt="Facebook"
+      className="w-8 h-8 hover:scale-110 transition-transform duration-300"
+    />
   </a>
   <a href="#" aria-label="Twitter">
-    <img src="twitter-icon.png" alt="Twitter" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+    <img
+      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+      alt="Twitter"
+      className="w-8 h-8 hover:scale-110 transition-transform duration-300"
+    />
   </a>
   <a href="#" aria-label="Instagram">
-    <img src="instagram-icon.png" alt="Instagram" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+    <img
+      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+      alt="Instagram"
+      className="w-8 h-8 hover:scale-110 transition-transform duration-300"
+    />
   </a>
   <a href="#" aria-label="LinkedIn">
-    <img src="linkedIn-icon.png" alt="LinkedIn" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+    <img
+      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+      alt="LinkedIn"
+      className="w-8 h-8 hover:scale-110 transition-transform duration-300"
+    />
   </a>
 </div>
 </div>

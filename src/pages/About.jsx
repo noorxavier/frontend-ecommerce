@@ -2,12 +2,16 @@ import React from 'react'
 import Title from '../components/Title'
 import { assets } from '../assets/assets'
 import NewsLetterBox from '../components/NewsLetterBox'
+import Banner from '../components/Banner'
 
 const About = () => {
   return (
     
-      <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-      <div className='txt-2xl text-center pt-8 border-t'>
+      <div >
+         <Banner image="https://erlendissolutions.com/assets/img/about.png">
+                <h1 className="text-white text-4xl font-bold">Welcome to Our Site</h1>
+              </Banner>
+      <div className='txt-5xl text-center pt-8 border-t'>
         <Title text1={'ABOUT'} text2={'US'}/>
       </div>
       <div className='my-10 flex flex-col md:flex-row gap-16'>
