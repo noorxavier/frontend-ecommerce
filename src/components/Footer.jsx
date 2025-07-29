@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-[#222222] text-white py-10 px-4">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
         {/* Company Info */}
-       <div class="about-section">
+       <div className="about-section">
 <h3>ABOUT US</h3>
 <img
   src="https://erlendissolutions.com/uploads/logo/298281641905006logo1.png"
@@ -68,9 +68,9 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="text-sm text-gray-300 space-y-2">
             <li><a href="/" className="hover:underline">Home</a></li>
-            <li><a href="/aboutus" className="hover:underline">About Us</a></li>
-            <li><a href="/contactus" className="hover:underline">Contact Us</a></li>
-            <li><a href="/careers" className="hover:underline">Careers</a></li>
+            <li><a href="/about" className="hover:underline">About Us</a></li>
+            <li><a href="/contact" className="hover:underline">Contact Us</a></li>
+            <li><a href="/career" className="hover:underline">Careers</a></li>
           </ul>
         </div>
       </div>
