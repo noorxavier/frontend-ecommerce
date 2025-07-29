@@ -1,5 +1,5 @@
 import React from 'react'
-import NewsLetterBox from '../components/NewsLetterBox'
+import NewsLetterBox from '../components/OurManagement'
 import Banner from '../components/Banner'
 const Management = () => {
   return (
